@@ -1,0 +1,41 @@
+
+<div class="wrapper">
+		<div class="section section-image section-login" style="background-image: url('../assets/img/login-image.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 ml-auto mr-auto">
+						<div class="card card-register">
+							<h3 class="title">Welcome</h3>
+										
+								<form class="register-form" action="http://localhost:8080/loginmodule/rest/user/save" method="post" enctype="multipart/form-data">
+									<label>User name</label>
+										 <input type="text" class="form-control" name="userName" placeholder="user name">
+									<label>Email</label>
+									<!-- <div class="input-group form-group-no-border"> -->
+										<!-- <span class="input-group-addon">
+											<i class="nc-icon nc-email-85"></i>
+										</span> -->
+										<input type="text" class="form-control" name="email" placeholder="Email">
+									<!-- </div> -->
+
+									<label>Password</label>
+									<!-- <div class="input-group form-group-no-border">
+										<span class="input-group-addon">
+											<i class="nc-icon nc-key-25"></i>
+										</span> -->
+										<input type="password" class="form-control" name="password" placeholder="Password">
+									<!-- </div> -->
+									<!-- <label>Contact number</label>
+										 <input type="number" class="form-control" placeholder="contact number"> -->
+								<!-- 	<button class="btn btn-danger btn-block btn-round" ng-click="registerlogin()">register</button> -->
+								<button type="submit" class="btn btn-danger btn-round" ng-click="registerlogin()">register </button>
+								</form>
+										
+						</div>
+								   
+					</div>
+				</div>
+			</div>
+		</div>
+		<div ui-view></div>
+</div>

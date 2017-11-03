@@ -1,0 +1,32 @@
+
+<div> 
+  <div class="wrapper" ng-show= "maindiv" >
+    <div class="page-header" style="background-image: url('../assets/img/login-image.jpg');">
+      <div class="filter"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 ml-auto mr-auto" >
+            <div class="card card-register">
+              <h3 class="title">Welcome</h3>								
+              <form class="register-form" ng-show="loginform">
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="Email" ng-model="username">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password"  ng-model="passwords">
+                <button class="btn btn-danger btn-block btn-round" ng-click=login(username,passwords)>Login</button>
+              </form>
+              <div class="forgot">
+                <a ui-sref="root.signup" class="btn btn-link btn-danger">create account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="footer register-footer text-center">
+		  <h6>&copy; <script>document.write(new Date().getFullYear())</script>, created by <i class="fa fa-heart"></i> Team ofs</h6>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div ui-view></div>
+</div>
+
